@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@nrwl/cli": "^14.0.3"
+  }
+}
