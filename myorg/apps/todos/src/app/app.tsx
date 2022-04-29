@@ -1,7 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { useEffect, useState, FunctionComponent } from 'react';
 import styles from './app.module.scss';
-import NxWelcome from './nx-welcome';
+import {Todos} from '@myorg/ui';
 import {Todo} from '@myorg/data'
 
 interface AppProps{
@@ -32,11 +32,7 @@ export const App: FunctionComponent<AppProps> = () => {
   return (
     <>
       <h1>Todos</h1>
-      <ul>
-        {todos.map((t:any) => (
-          <li className={'todo'}>{t.title}</li>
-        ))}
-      </ul>
+      <Todos todos={todos}/>
       <button id={'add-todo'} onClick={handleAddTodo}>
         Add Todo
       </button>
