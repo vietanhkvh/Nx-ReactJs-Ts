@@ -3,6 +3,8 @@
   "projects": {
     "api": "apps/api",
     "data": "libs/data",
+    "myapp": "apps/myapp",
+    "myapp-e2e": "apps/myapp-e2e",
     "todos": "apps/todos",
     "todos-e2e": "apps/todos-e2e",
     "ui": "libs/ui"
