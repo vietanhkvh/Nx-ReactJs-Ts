@@ -1,7 +1,8 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import styles from './app.module.scss';
-import NxWelcome from './nx-welcome';
-
+// import NxWelcome from './nx-welcome';
+import MyComponent from '../components/common/my-component/my-component'
+import NewComponent from '../components/common/new-component/new-component'
 import { Route, Routes, Link } from 'react-router-dom';
 
 export function App() {
@@ -30,18 +31,13 @@ export function App() {
         <Route
           path="/"
           element={
-            <div>
-              This is the generated root route.{' '}
-              <Link to="/page-2">Click here for page 2.</Link>
-            </div>
+            <MyComponent/>
           }
         />
         <Route
           path="/page-2"
           element={
-            <div>
-              <Link to="/">Click here to go back to root page.</Link>
-            </div>
+            <NewComponent/>
           }
         />
       </Routes>

@@ -14,5 +14,6 @@
       "files": ["*.js", "*.jsx"],
       "rules": {}
     }
-  ]
+  ],
+  "parser": "@babel/eslint-parser"
 }
