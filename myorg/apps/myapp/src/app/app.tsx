@@ -1,14 +1,21 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import styles from './app.module.scss';
 // import NxWelcome from './nx-welcome';
-import MyComponent from '../components/common/my-component/my-component'
-import NewComponent from '../components/common/new-component/new-component'
+import MyComponent from '../components/common/my-component/my-component';
+import NewComponent from '../components/common/new-component/new-component';
 import { Route, Routes, Link } from 'react-router-dom';
+import SubmitButton from '../components/common/submit-button';
+import Loading from '../components/common/loading';
 
 export function App() {
   return (
     <>
       {/* <NxWelcome title="myapp" /> */}
+      <div style={{width:200, height:200}}>
+        <SubmitButton />
+      </div>
+      <Loading style={{backgroundColor:'red', color:'blue'}}/>
+      
       <div />
 
       {/* START: routes */}
@@ -28,18 +35,8 @@ export function App() {
         </ul>
       </div>
       <Routes>
-        <Route
-          path="/"
-          element={
-            <MyComponent/>
-          }
-        />
-        <Route
-          path="/page-2"
-          element={
-            <NewComponent/>
-          }
-        />
+        <Route path="/" element={<MyComponent />} />
+        <Route path="/page-2" element={<NewComponent />} />
       </Routes>
       {/* END: routes */}
     </>

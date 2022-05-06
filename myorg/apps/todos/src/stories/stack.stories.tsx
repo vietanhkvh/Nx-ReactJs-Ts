@@ -32,6 +32,8 @@ const Template: ComponentStory<typeof Stack> = ({
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
+            border:'solid 1px',
+            margin:5
           }}
         >
           {i}

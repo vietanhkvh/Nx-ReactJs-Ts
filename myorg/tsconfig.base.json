@@ -17,7 +17,9 @@
     "paths": {
       "@myorg/data": ["libs/data/src/index.ts"],
       "@myorg/ui": ["libs/ui/src/index.ts"]
-    }
+    },
+    "noImplicitAny": false,
+    "noImplicitThis": false
   },
   "exclude": ["node_modules", "tmp"]
 }
