@@ -24,7 +24,6 @@ const borderList: string[] = [
   'borderBlack',
   'borderGrey',
   'borderPink',
-  'borderRed',
   'borderGreen',
   'facebook',
   'momo',
