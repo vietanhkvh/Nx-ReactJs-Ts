@@ -6,40 +6,14 @@ import NewComponent from '../components/common/new-component/new-component';
 import { Route, Routes, Link } from 'react-router-dom';
 import SubmitButton from '../components/common/submit-button';
 import Loading from '../components/common/loading';
-
+import MyForm from '../components/common/my-form/my-form';
 export function App() {
   return (
-    <>
-      {/* <NxWelcome title="myapp" /> */}
-      <div style={{width:200, height:200}}>
-        <SubmitButton />
-      </div>
-      <Loading style={{backgroundColor:'red', color:'blue'}}/>
-      
-      <div />
-
-      {/* START: routes */}
-      {/* These routes and navigation have been generated for you */}
-      {/* Feel free to move and update them to fit your needs */}
-      <br />
-      <hr />
-      <br />
-      <div role="navigation">
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/page-2">Page 2</Link>
-          </li>
-        </ul>
-      </div>
-      <Routes>
-        <Route path="/" element={<MyComponent />} />
-        <Route path="/page-2" element={<NewComponent />} />
-      </Routes>
-      {/* END: routes */}
-    </>
+    <div className={styles['container']}>
+      <div className={styles['header']}>header</div>
+      <div className={styles['body']}>body</div>
+      <div className={styles['footer']}>footer</div>
+    </div>
   );
 }
 

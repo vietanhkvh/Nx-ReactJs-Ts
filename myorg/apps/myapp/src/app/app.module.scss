@@ -1,1 +1,15 @@
 /* Your styles goes here. */
+.container {
+  width: 100%;
+  height: 100%;
+  .header {
+    background-color: aqua;
+    height: 100px;
+  }
+  .body {
+    background-color: cadetblue;
+  }
+  .footer {
+    background-color: aqua;
+  }
+}
