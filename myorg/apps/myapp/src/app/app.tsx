@@ -7,10 +7,13 @@ import { Route, Routes, Link } from 'react-router-dom';
 import SubmitButton from '../components/common/submit-button';
 import Loading from '../components/common/loading';
 import MyForm from '../components/common/my-form/my-form';
+import MyHeader from '../components/common/my-header/my-header';
 export function App() {
   return (
     <div className={styles['container']}>
-      <div className={styles['header']}>header</div>
+      <div className={styles['header']}>
+        <MyHeader />
+      </div>
       <div className={styles['body']}>body</div>
       <div className={styles['footer']}>footer</div>
     </div>

@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  .logo {
+    width: 50%;
+  }
+  .button-group {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
